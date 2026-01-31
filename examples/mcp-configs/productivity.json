@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "google-calendar": {
+      "comment": "Google Calendar management",
+      "command": "npx",
+      "args": ["-y", "@cocal/google-calendar-mcp"],
+      "env": {
+        "GOOGLE_OAUTH_CREDENTIALS": "/path/to/gcp-oauth.keys.json"
+      }
+    },
+    "todoist": {
+      "comment": "Todoist task management - OAuth via browser on first use",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://ai.todoist.net/mcp"]
+    },
+    "obsidian": {
+      "comment": "Obsidian notes - requires Local REST API plugin",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-obsidian"],
+      "env": {
+        "OBSIDIAN_REST_API_KEY": "your-api-key",
+        "OBSIDIAN_REST_API_URL": "https://127.0.0.1:27124"
+      }
+    }
+  }
+}
