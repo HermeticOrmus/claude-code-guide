@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "whatsapp": {
+      "comment": "WhatsApp via Periskope - get API key from periskope.app",
+      "command": "npx",
+      "args": ["-y", "@periskope/whatsapp-mcp"],
+      "env": {
+        "PERISKOPE_API_KEY": "your-api-key",
+        "PERISKOPE_PHONE_ID": "your-phone-number"
+      }
+    },
+    "slack": {
+      "comment": "Slack integration",
+      "command": "npx",
+      "args": ["-y", "@anthropic/slack-mcp"],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-your-token"
+      }
+    },
+    "discord": {
+      "comment": "Discord bot integration",
+      "command": "npx",
+      "args": ["-y", "mcp-discord"],
+      "env": {
+        "DISCORD_BOT_TOKEN": "your-bot-token"
+      }
+    },
+    "gmail": {
+      "comment": "Gmail with auto-authentication",
+      "command": "npx",
+      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
+      "env": {
+        "GMAIL_OAUTH_PATH": "/path/to/gcp-oauth.keys.json",
+        "GMAIL_CREDENTIALS_PATH": "/path/to/credentials.json"
+      }
+    }
+  }
+}

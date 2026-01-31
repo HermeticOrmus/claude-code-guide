@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "PostToolUse": {
+      "comment": "Auto-format code after edits",
+      "command": "bash ~/.claude/hooks/auto-format.sh",
+      "timeout": 5000
+    }
+  }
+}

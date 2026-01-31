@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "github": {
+      "comment": "GitHub repository management",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your-token"
+      }
+    },
+    "git": {
+      "comment": "Local git operations",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git"]
+    },
+    "supabase": {
+      "comment": "Supabase database - OAuth via browser on first use",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.supabase.com/mcp?project_ref=your-project-ref"]
+    },
+    "sqlite": {
+      "comment": "Local SQLite database",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "--db-path", "/path/to/databases"]
+    }
+  }
+}

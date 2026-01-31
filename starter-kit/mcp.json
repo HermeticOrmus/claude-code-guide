@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "memory": {
+      "comment": "Persistent memory across sessions",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    }
+  }
+}
