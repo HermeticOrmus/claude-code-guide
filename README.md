@@ -1,4 +1,21 @@
-# The Complete Guide to Claude Code
+<p align="center">
+  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_terminal.gif" alt="Claude Code Guide" width="128" style="image-rendering: pixelated;" />
+</p>
+
+<h1 align="center">Claude Code Guide</h1>
+
+<p align="center">
+  <em>Complete guide to Claude Code as a system-wide assistant</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/claude-code-guide/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/claude-code-guide?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/claude-code-guide/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/claude-code-guide?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/claude-code-guide/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/claude-code-guide?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
 
 > **DON'T PANIC.** Transform Claude Code from "project-based coding tool" into "computer-wide intelligent assistant."
 
