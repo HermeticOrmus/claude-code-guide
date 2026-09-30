@@ -1,27 +1,35 @@
 {
   "mcpServers": {
     "github": {
-      "comment": "GitHub repository management",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your-token"
+      "comment": "GitHub's hosted MCP server (the npm package @modelcontextprotocol/server-github is deprecated). Authenticates with a personal access token sent as a bearer header",
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ghp_your-token"
       }
     },
     "git": {
-      "comment": "Local git operations",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-git"]
+      "comment": "Local git operations. Python package, run with uvx (from uv)",
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "/path/to/repo"
+      ]
     },
     "supabase": {
-      "comment": "Supabase database - OAuth via browser on first use",
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.supabase.com/mcp?project_ref=your-project-ref"]
+      "comment": "Supabase database - OAuth via browser on first use: claude mcp login supabase",
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=your-project-ref"
     },
     "sqlite": {
-      "comment": "Local SQLite database",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sqlite", "--db-path", "/path/to/databases"]
+      "comment": "Local SQLite database. Python package, run with uvx (from uv)",
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--db-path",
+        "/path/to/database.db"
+      ]
     }
   }
 }
