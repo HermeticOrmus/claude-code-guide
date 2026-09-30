@@ -100,6 +100,23 @@ cd claude-code-guide
 
 `setup.sh` runs the same `claude plugin` commands shown above. It also takes `--only <plugin>` and `--scope user|project|local`.
 
+### Install in Grok Build
+
+Grok Build loads the same plugin folder. Add the marketplace and install the starter kit from a terminal:
+
+```bash
+grok plugin marketplace add HermeticOrmus/claude-code-guide
+grok plugin install starter-kit@claude-code-guide
+```
+
+Or install it straight from its folder, with no marketplace:
+
+```bash
+grok plugin install HermeticOrmus/claude-code-guide#starter-kit
+```
+
+From a clone, `./setup.sh --grok` installs it through the `grok` CLI; `--only`, `--list`, and `--uninstall` work the same way. The starter kit's auto-format hook uses a hook format Grok Build supports, but it has not been verified in a live Grok session yet.
+
 ### Copy the personal files
 
 A plugin cannot ship your `CLAUDE.md` or your settings, so these stay manual. Run them from a clone of this repository (see [With setup.sh](#with-setupsh)):
