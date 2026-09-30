@@ -153,6 +153,7 @@ Copied this way, the commands are `/dev:init`, `/dev:test`, and `/learning:expla
 - [Setup Checklist](#setup-checklist)
 - [Key Principles](#key-principles)
 - [Feedback](#feedback)
+- [Contribute](#contribute)
 - [Contributing](#contributing)
 
 ---
@@ -1179,6 +1180,14 @@ Skills and agents travel the same way, in `.claude/skills/` and `.claude/agents/
 Starred this? Tell us what worked and what is missing: [open a feedback issue](https://github.com/HermeticOrmus/claude-code-guide/issues/new?template=feedback.yml). Every piece of feedback gets an answer, and changes that come from it are credited in the release notes.
 
 Questions and setups you want to share belong in [Discussions](https://github.com/HermeticOrmus/claude-code-guide/discussions).
+
+## Contribute
+
+- Pick up work from the [Menu](pantry/MENU.md): every item has a Done-when anyone can check. Open items carry the [`menu` label](https://github.com/HermeticOrmus/claude-code-guide/issues?q=is%3Aopen+label%3Amenu), and [good first issues](https://github.com/HermeticOrmus/claude-code-guide/contribute) are on the contribute page.
+- A starter-kit agent, skill or command did not run when it should have? File a [routing miss](https://github.com/HermeticOrmus/claude-code-guide/issues/new?template=routing-miss.yml).
+- Want a new agent, skill, command or hook in the starter kit? File a [plugin proposal](https://github.com/HermeticOrmus/claude-code-guide/issues/new?template=plugin-proposal.yml), or tell us in a [feedback issue](https://github.com/HermeticOrmus/claude-code-guide/issues/new?template=feedback.yml).
+- Show your setup in [Discussions, under Show and tell](https://github.com/HermeticOrmus/claude-code-guide/discussions/categories/show-and-tell).
+- Layout and the local test loop: [Ways to contribute](CONTRIBUTING.md#ways-to-contribute).
 
 ## Contributing
 
