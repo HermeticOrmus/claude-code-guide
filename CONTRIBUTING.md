@@ -33,6 +33,7 @@ Thanks for your interest in contributing!
 - Keep examples minimal and focused
 - Include comments explaining non-obvious parts
 - Test configurations before submitting
+- If you change the starter kit, run `claude plugin validate .` and `claude plugin validate starter-kit` (CI runs both, plus a clean install); add `--strict` to fail on warnings too
 - Follow existing file structure patterns
 
 ### Code of Conduct
