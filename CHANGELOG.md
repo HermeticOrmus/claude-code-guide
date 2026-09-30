@@ -2,6 +2,15 @@
 
 All notable changes to this guide are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- A public pantry in [`pantry/`](pantry/README.md): a competitor map, an X mine, a people mine and a pantry queue of Goal atoms, each row with its source, plus the templates for the next run.
+- [`pantry/MENU.md`](pantry/MENU.md), generated from the pantry queue, which names one up-next item with a Done-when anyone can check.
+- Two issue forms: routing miss (Claude picked the wrong agent, skill or command) and plugin proposal, with the `routing-miss` and `plugin-proposal` labels.
+- A "Ways to contribute" section at the top of `CONTRIBUTING.md` (Menu items, routing misses, additions to the starter kit and their layout, translations, sharing what you built) with the local test loop, and a short "Contribute" section in the README.
+
 ## [2.0.0] - 2026-09-30
 
 Second edition. Checked against Claude Code 2.1.285: every command, flag, file path, and setting the guide mentions was confirmed with `claude --help` and the subcommand help, `claude doctor`, `claude plugin validate`, the reference text built into the CLI, or a run in a throwaway `CLAUDE_CONFIG_DIR`. All first-edition content is still in the README; stale parts were corrected where they stand.
