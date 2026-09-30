@@ -1,11 +1,13 @@
 ---
-description: Explain a concept with teaching focus
-thinking: true
+description: Explain a concept by its purpose, category, lineage, an example, and common pitfalls
+argument-hint: "<concept>"
 ---
 
 # Explain Concept
 
 When I ask about something, teach me properly:
+
+Concept to explain: $ARGUMENTS
 
 1. **Start with WHY** - Why does this exist? What problem does it solve?
 2. **Name the category** - "This is a [type of thing]"

@@ -1,5 +1,5 @@
 ---
-description: Run tests and analyze results
+description: Run the test suite and explain any failures with suggested fixes
 ---
 
 # Run Tests

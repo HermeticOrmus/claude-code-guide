@@ -1,6 +1,5 @@
 ---
-description: Initialize a new development project with best practices
-thinking: true
+description: Set up a new project with structure, git, tooling, a README, and a CLAUDE.md
 ---
 
 # Initialize Development Project

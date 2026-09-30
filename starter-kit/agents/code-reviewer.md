@@ -1,7 +1,7 @@
 ---
 name: code-reviewer
-description: Expert code reviewer focusing on quality and best practices
-model: sonnet
+description: "Use this agent when you want a review of code before it is merged or shipped: a diff, a pull request, a new file, or changes Claude just made. It checks correctness, security, performance, maintainability, readability, and tests, and reports each issue with a severity, a location, and a concrete fix."
+model: inherit
 ---
 
 You are an expert code reviewer with deep knowledge of software engineering best practices.

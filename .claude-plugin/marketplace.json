@@ -1,0 +1,19 @@
+{
+  "name": "claude-code-guide",
+  "owner": {
+    "name": "Diego Bodart",
+    "url": "https://github.com/HermeticOrmus"
+  },
+  "metadata": {
+    "description": "The starter kit from the Claude Code Guide, packaged as a Claude Code plugin.",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "starter-kit",
+      "source": "./starter-kit",
+      "description": "A code reviewer and a teaching agent, project setup, test, and explain commands, a skill template, and a hook that formats files Claude edits.",
+      "version": "2.0.0"
+    }
+  ]
+}

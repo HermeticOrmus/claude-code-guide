@@ -1,0 +1,17 @@
+{
+  "description": "Format a file with its language's formatter after Claude edits or writes it",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/auto-format.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
