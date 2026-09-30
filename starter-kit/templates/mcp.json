@@ -1,9 +1,12 @@
 {
   "mcpServers": {
     "memory": {
-      "comment": "Persistent memory across sessions",
+      "comment": "Persistent memory across sessions. Reference only: Claude Code does not read this file. Add the server with: claude mcp add --scope user memory -- npx -y @modelcontextprotocol/server-memory",
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
     }
   }
 }
