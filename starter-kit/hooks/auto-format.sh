@@ -13,6 +13,11 @@
 # Test it without Claude:
 #   echo '{"tool_name":"Write","tool_input":{"file_path":"'"$PWD"'/a.py"},"cwd":"'"$PWD"'"}' | bash auto-format.sh
 
+# No set -e: a hook must exit 0 even when a formatter or jq fails, so each
+# command handles its own failure and the script ends with exit 0.
+set -uo pipefail
+IFS=$'\n\t'
+
 command -v jq &> /dev/null || exit 0
 
 HOOK_INPUT=$(cat)

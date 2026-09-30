@@ -10,6 +10,11 @@
 #   "PreToolUse": [{"matcher": "Read|Edit|Write",
 #     "hooks": [{"type": "command", "command": "bash ~/.claude/hooks/protect-secrets.sh"}]}]
 
+# No set -e: a hook must exit 0 even when jq or git fails, so each
+# command handles its own failure and the script ends with exit 0.
+set -uo pipefail
+IFS=$'\n\t'
+
 command -v jq &> /dev/null || exit 0
 
 FILE_PATH=$(jq -r '.tool_input.file_path // empty' 2>/dev/null)
