@@ -1,6 +1,6 @@
 ---
 name: example-skill
-description: Template for creating a skill
+description: "A fill-in template that shows the SKILL.md layout: frontmatter, when to use it, a step-by-step procedure, output templates, and notes. Use when writing a new skill and you want a starting structure to copy and adapt."
 version: 1.0.0
 ---
 
