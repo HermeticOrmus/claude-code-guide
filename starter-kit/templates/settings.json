@@ -1,15 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git:*)",
-      "Bash(npm:*)",
-      "Bash(node:*)",
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(node *)",
       "Edit",
       "Write"
     ],
     "deny": [
-      "Bash(rm -rf:*)",
-      "Bash(sudo:*)"
+      "Bash(rm -rf *)",
+      "Bash(sudo *)"
     ]
   }
 }

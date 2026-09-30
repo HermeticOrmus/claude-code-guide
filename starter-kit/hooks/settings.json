@@ -1,9 +1,16 @@
 {
   "hooks": {
-    "PostToolUse": {
-      "comment": "Auto-format code after edits",
-      "command": "bash ~/.claude/hooks/auto-format.sh",
-      "timeout": 5000
-    }
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/auto-format.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
   }
 }
