@@ -8,6 +8,11 @@
 # Register it in ~/.claude/settings.json (see README, Hooks):
 #   "SessionStart": [{"hooks": [{"type": "command", "command": "bash ~/.claude/hooks/session-context.sh"}]}]
 
+# No set -e: a hook must exit 0 even when jq or git fails, so each
+# command handles its own failure and the script ends with exit 0.
+set -uo pipefail
+IFS=$'\n\t'
+
 command -v jq &> /dev/null || exit 0
 
 DIR=$(jq -r '.cwd // empty' 2>/dev/null)
