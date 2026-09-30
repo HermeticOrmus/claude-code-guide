@@ -3,32 +3,41 @@
     "whatsapp": {
       "comment": "WhatsApp via Periskope - get API key from periskope.app",
       "command": "npx",
-      "args": ["-y", "@periskope/whatsapp-mcp"],
+      "args": [
+        "-y",
+        "@periskope/whatsapp-mcp"
+      ],
       "env": {
         "PERISKOPE_API_KEY": "your-api-key",
         "PERISKOPE_PHONE_ID": "your-phone-number"
       }
     },
     "slack": {
-      "comment": "Slack integration",
-      "command": "npx",
-      "args": ["-y", "@anthropic/slack-mcp"],
-      "env": {
-        "SLACK_BOT_TOKEN": "xoxb-your-token"
+      "comment": "Slack's hosted MCP server (the npm package @anthropic/slack-mcp does not exist). It uses OAuth without dynamic client registration, so it needs an OAuth client ID. Add it with: claude mcp add --transport http --client-id your-client-id slack https://mcp.slack.com/mcp",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "oauth": {
+        "clientId": "your-client-id"
       }
     },
     "discord": {
       "comment": "Discord bot integration",
       "command": "npx",
-      "args": ["-y", "mcp-discord"],
+      "args": [
+        "-y",
+        "mcp-discord"
+      ],
       "env": {
-        "DISCORD_BOT_TOKEN": "your-bot-token"
+        "DISCORD_TOKEN": "your-bot-token"
       }
     },
     "gmail": {
       "comment": "Gmail with auto-authentication",
       "command": "npx",
-      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"],
+      "args": [
+        "-y",
+        "@gongrzhe/server-gmail-autoauth-mcp"
+      ],
       "env": {
         "GMAIL_OAUTH_PATH": "/path/to/gcp-oauth.keys.json",
         "GMAIL_CREDENTIALS_PATH": "/path/to/credentials.json"
