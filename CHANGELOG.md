@@ -10,6 +10,9 @@ All notable changes to this guide are recorded here. The format follows [Keep a 
 - [`pantry/MENU.md`](pantry/MENU.md), generated from the pantry queue, which names one up-next item with a Done-when anyone can check.
 - Two issue forms: routing miss (Claude picked the wrong agent, skill or command) and plugin proposal, with the `routing-miss` and `plugin-proposal` labels.
 - A "Ways to contribute" section at the top of `CONTRIBUTING.md` (Menu items, routing misses, additions to the starter kit and their layout, translations, sharing what you built) with the local test loop, and a short "Contribute" section in the README.
+- Grok Build support: `.grok-plugin/marketplace.json`, generated from the Claude manifest by `scripts/sync-grok-manifest.py`, so `grok plugin marketplace add HermeticOrmus/claude-code-guide` then `grok plugin install starter-kit@claude-code-guide` works, as does `grok plugin install HermeticOrmus/claude-code-guide#starter-kit`. CI checks the generated file, runs `grok plugin validate` on the starter kit, and installs it into a clean Grok home. The README shows the Grok Build install; the auto-format hook is not yet verified in a live Grok session.
+- `./setup.sh --grok` installs through the `grok` CLI instead of `claude`, with the same `--only`, `--list`, and `--uninstall` behavior.
+- `LEDGER.md`, the kintsugi ledger: every crack the second edition found and sealed, with its evidence, and the crack still open.
 
 ## [2.0.0] - 2026-09-30
 
