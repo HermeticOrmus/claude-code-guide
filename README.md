@@ -1115,10 +1115,12 @@ The rule syntax is in [Permission rules](#permission-rules).
 ### Team Sharing
 
 Share via git:
-- `.claude/settings.json` — Permissions, hooks, and the team's plugins (`enabledPlugins`, `extraKnownMarketplaces`)
-- `.claude/commands/` — Slash commands (and `.claude/skills/`, `.claude/agents/` for skills and agents)
+- `.claude/settings.json` — Permissions
+- `.claude/commands/` — Slash commands
 - `.mcp.json` — MCP configs
 - `CLAUDE.md` — Project instructions
+
+Skills and agents travel the same way, in `.claude/skills/` and `.claude/agents/`. `.claude/settings.json` can also carry hooks and the team's plugins (`enabledPlugins`, `extraKnownMarketplaces`; see [Share plugins with a team](#share-plugins-with-a-team)).
 
 ---
 
