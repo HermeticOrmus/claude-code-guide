@@ -1196,6 +1196,8 @@ Skills and agents travel the same way, in `.claude/skills/` and `.claude/agents/
 
 Starred this? Tell us what worked and what is missing: [open a feedback issue](https://github.com/HermeticOrmus/claude-code-guide/issues/new?template=feedback.yml). Every piece of feedback gets an answer, and changes that come from it are credited in the release notes.
 
+Cracks we found and sealed: [LEDGER.md](LEDGER.md).
+
 Questions and setups you want to share belong in [Discussions](https://github.com/HermeticOrmus/claude-code-guide/discussions).
 
 ## Contribute
