@@ -994,7 +994,7 @@ Validating plugin manifest: ./starter-kit/.claude-plugin/plugin.json
 ✔ Validation passed
 ```
 
-It catches the mistakes this guide's first edition made and more: a hook event given as an object instead of an array ("entry ignored at runtime"), an unknown hook event name, an agent with no description, a skill with no frontmatter, a `CLAUDE.md` at the plugin root. This repository runs it on every pull request in [.github/workflows/validate.yml](.github/workflows/validate.yml), together with a clean install.
+It catches the mistakes this guide's first edition made and more: a hook event given as an object instead of an array ("entry ignored at runtime"), an unknown hook event name, an agent with no description, a skill with no frontmatter, a `CLAUDE.md` at the plugin root. This repository runs it on every pull request in [.github/workflows/check.yml](.github/workflows/check.yml) (`bash scripts/check.sh`), together with a clean install.
 
 ### Tag a release
 
