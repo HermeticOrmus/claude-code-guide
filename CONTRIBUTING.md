@@ -65,7 +65,7 @@ claude --plugin-dir ./starter-kit
 
 `claude plugin details` lists the agents and skills with their token cost. It leaves out commands kept in subfolders, such as `commands/dev/init.md`; that is how the CLI reports them, and they still load as `/starter-kit:dev:init`. The last line prints nothing when the plugin loaded without errors. To try a hook script without Claude, pipe it a JSON event as [Test a hook without Claude](README.md#test-a-hook-without-claude) shows.
 
-CI ([`.github/workflows/validate.yml`](.github/workflows/validate.yml)) runs the same checks on every pull request: it validates the marketplace and the plugin, then installs it into a clean config. If this is your first contribution, the CI run waits until a maintainer approves it.
+CI ([`.github/workflows/check.yml`](.github/workflows/check.yml), running `bash scripts/check.sh`) runs the same checks on every pull request: it validates the marketplace and the plugin, then installs it into a clean config. If this is your first contribution, the CI run waits until a maintainer approves it.
 
 ## How to Contribute
 
